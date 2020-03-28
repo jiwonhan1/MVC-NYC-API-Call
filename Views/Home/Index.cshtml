@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">All Articles:</h1>
+    <ol>
+    @foreach(Article article in Model)
+    {
+        <ul>
+            <li>Section: @article.Section</li>
+            <li>Title: @article.Title</li>
+            <li>Abstract: @article.Abstract</li>
+            <li>Url: @article.Url</li>
+            <li>Byline: @article.Byline</li>
+        </ul>
+        <br>
+    }
+    </ol>
+</div>
